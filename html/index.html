@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Captured Moments</title>
+</head>
+<body>
+    <header>
+        <div class="logo">Captured Moments</div>
+        <nav>
+            <ul>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="skills.html">Experience</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Welcome to Captured Moments</h1>
+        </section>
+
+        <div class="slideshow-container">
+            <div class="slide fade">
+                <img src="owner.jpeg" alt="Portfolio Image 1">
+            </div>
+            <div class="slide fade">
+                <img src="grp.jpg" alt="Portfolio Image 2">
+            </div>
+            <div class="slide fade">
+                <img src="yo.jpg" alt="Portfolio Image 3">
+            </div>
+            <div class="slide fade">
+                <img src="tro.jpeg" alt="Portfolio Image 4">
+            </div>
+            <div class="slide fade">
+                <img src="yro.jpeg" alt="Portfolio Image 5">
+            </div>
+        </div>
+        <br>
+        <a href="portfolio.html" class="button">View Portfolio</a>
+        
+        <section id="about">
+            <p>At Captured Moments, we are passionate about photography and dedicated to capturing life’s most precious moments. Our team of professional photographers specializes in a wide range of photography styles, ensuring that every image tells a unique story.</p>
+            <p>Whether it's a gaming, a gathering photo, or a special event, we focus on the details that matter most. Our goal is to provide you with high-quality images that you can cherish for years to come. Explore our portfolio to see our work and get in touch to discuss how we can help capture your moments.</p>
+            <br>
+            <a href="about.html" class="more-button">About Us</a>
+          </section>
+
+        <section id="gallery">
+            <h2>PORTRAIT</h2>
+            <br>
+            <div class="gallery-container">
+                <img src="thug.jpg" alt="Gallery Image 1">
+                <img src="mortal.jpg.png" alt="Gallery Image 2">
+                <img src="goldy.jpeg" alt="Gallery Image 3">
+                <img src="rega.jpeg" alt="Gallery Image 4">
+                <img src="mercy.jpg" alt="Gallery Image 5">
+                <img src="scout.webp" alt="Gallery Image 6">
+                <img src="kaash.jpeg" alt="Gallery Image 7">
+                <img src="mamba.jpeg" alt="Gallery Image 8">
+            </div>
+            <br>
+            <a href="gallery.html" class="more-button">View More</a>
+        </section>
+    </main>
+    <marquee><h2>Welcome to Captured Moments</h2></marquee>
+    <footer>
+        <p>&copy; 2024 Captured Moments. All rights reserved.</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}    
+            slides[slideIndex - 1].style.display = "block";  
+            setTimeout(showSlides, 3000);
+        }
+    </script>
+</body>
+</html>
